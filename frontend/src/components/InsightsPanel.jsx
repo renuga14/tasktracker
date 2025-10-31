@@ -6,7 +6,7 @@ function InsightsPanel() {
   useEffect(() => {
     const fetchInsights = async () => {
       try {
-        const response = await fetch('http://localhost:3000/insights')
+        const response = await fetch('https://tasktracker-tlcz.onrender.com/insights')
         const data = await response.json()
         setInsight(data.summary)
       } catch (err) {
