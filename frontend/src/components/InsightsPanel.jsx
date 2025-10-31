@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 
 function InsightsPanel() {
-  const [insight, setInsight] = useState('Loading insights...')
+  const [insight, setInsight] = useState('Loading...')
 
   useEffect(() => {
     const fetchInsights = async () => {
